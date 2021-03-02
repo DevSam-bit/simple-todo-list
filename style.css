@@ -1,0 +1,47 @@
+body {
+  margin: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+input#todo-text, button#todo-add {
+  padding: 3px 6px;
+}
+
+button#todo-add {
+  cursor: pointer;
+}
+
+button#todo-add:disabled {
+  cursor: not-allowed;
+}
+
+#container {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+#container > li {
+  border: 1px solid #fdd566;
+  max-width: 200px;
+  padding: 5px;
+  margin: 3px 0;
+  list-style: none;
+  background-color: #ffe59e;
+}
+
+#container > li > span {
+  float: right;
+  cursor: pointer;
+  padding: 1px 4px 5px 4px;
+  max-height: 12px;
+  border-radius: 2px;
+  color: #000;
+  background-color: #fff;
+  user-select: none;
+  transition: all 0.15s ease;
+}
+
+#container > li > span:hover {
+  color: #fff;
+  background-color: #c50000;
+}
